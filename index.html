@@ -78,22 +78,19 @@
         </div>
 
         <script>
-            // Get the modal
+            // Get the modal, buttons and messages
             var modal = document.getElementById("myModal");
 
             var clickedYes = document.getElementById("yesC");
             var clickedno = document.getElementById("noC");
             
-            // Get the button that opens the modal
             var btn = document.getElementById("myBtn");
 
             var yes = document.getElementById("yes");
 
             var cancel = document.getElementById("cancel");
             
-            // Get the <span> element that closes the modal
-            var span = document.getElementsByClassName("close")[0];
-            
+           
             // When the user clicks the button, open the modal 
             btn.onclick = function() {
               modal.style.display = "block";
@@ -101,7 +98,7 @@
               clickedYes.style.display = "none"
             }
             
-            // When the user clicks on <span> (x), close the modal
+            // When the user clicks on yes or cancel, close modal and display that message
             yes.onclick = function() {
               modal.style.display = "none";
               clickedYes.style.display = "block"
