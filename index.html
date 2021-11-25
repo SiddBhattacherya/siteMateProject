@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Title</title>
-
+        
         <style>
             body {font-family: Arial, Helvetica, sans-serif;}
             
@@ -47,10 +46,9 @@
             </style>
     </head>
     <body>
-        <h2>Modal Example</h2>
-
+       
         
-        <button id="myBtn">Open Modal</button>
+        <button id="myBtn">Click me</button>
 
        
         <div id="myModal" class="modal">
@@ -99,6 +97,8 @@
             // When the user clicks the button, open the modal 
             btn.onclick = function() {
               modal.style.display = "block";
+              clickedno.style.display = "none";
+              clickedYes.style.display = "none"
             }
             
             // When the user clicks on <span> (x), close the modal
